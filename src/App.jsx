@@ -1,13 +1,12 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import styled from "styled-components"
+
 import img from "./image/logo1.png"
 import img2 from "./image/main.jpg"
 import Data from './Api'
 import "./App.css"
 function App() {
-
+  const [cat,setCat] = useState();
+ console.log(cat)
   return (
     <>
       <div className='mainContainer'>
@@ -21,10 +20,27 @@ function App() {
         </div>
         <div className='mid'>
           <ul>
-            <li>All</li>
-            <li>Breakfast</li>
-            <li>Lunch</li>
-            <li>Dinner</li>
+            <li onClick={()=>
+              {
+                setCat("all")
+              }
+            }>All</li>
+            <li onClick={()=>
+              {
+                setCat("breakfast")
+              }
+            }>Breakfast</li>
+            <li onClick={()=>
+              {
+                setCat("lunch")
+              }
+            }>Lunch</li>
+            <li onClick={()=>
+              {
+                setCat("dinner")
+               
+              }
+            }>Dinner</li>
           </ul>
         </div>
         <div className='lower'>

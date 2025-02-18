@@ -24,7 +24,7 @@
   padding: 10px;
 }
 .logo img{
-  width:30%;
+  width:40%;
   padding: 10px;
   cursor: pointer;
  
@@ -85,9 +85,10 @@
   align-items: center;
 }
 .p1{
+  position: relative;
   margin-top: 30px;
- 
-  width:25%;
+  width:28%;
+  height:auto;
   color:white;
   height:20vh;
   display: flex;
@@ -117,8 +118,8 @@
   position: relative;
   width:30%;
   border-radius: 10px;
-  margin-top: 30px;
-  left:150px;
+  margin-top: 5px;
+  left:140px;
   background:rgb(248, 27, 27);
   color: white;
   text-align: center;
@@ -180,7 +181,8 @@
 }
 .lower{
   width:100%;
-  height:100vh;
+  height:150vh;
+
 }
 .lower img{
   position:relative;
@@ -193,18 +195,18 @@
   margin-top:200px;
   top:0;
   width:100%;
-  height:auto;
+  height:120vh;
+
   background:transparent;
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
 }
 .lower .porduct .p1{
   position: relative;
   width:80%;
-  height:20vh;
+  height:25vh;
   overflow: hidden;
   display: flex;
   justify-content: center;
@@ -263,11 +265,11 @@ height:25px;
     background:linear-gradient(120deg,rgb(197, 135, 135),rgb(177, 85, 85),rgb(209, 116, 116));
   }
   .logo{
-    width:30%;
+    width:50%;
     padding: 10px;
   }
   .logo img{
-    width:30%;
+    width:50%;
     padding: 10px;
     cursor: pointer;
    
@@ -330,9 +332,9 @@ height:25px;
   .p1{
     margin-top: 30px;
    
-    width:25%;
+    width:45%;
     color:white;
-    height:20vh;
+    height:25vh;
     display: flex;
     flex-direction: row;
     margin-right: 30px;
@@ -358,6 +360,7 @@ height:25px;
   }
   .p1 .dis .pp1{
     position: relative;
+    bottom: 0;
     width:30%;
     border-radius: 10px;
     margin-top: 30px;
