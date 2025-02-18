@@ -1,0 +1,369 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+*{
+  padding:0;
+  margin:0;
+  box-sizing: border-box;
+  font-family: "Outfit", serif;
+}
+@media only screen and (min-width: 1025px) {
+ 
+.mainContainer{
+  width:100%;
+  height:auto;
+
+}
+ .maintopContainer{
+  width:100%;
+  display:flex;
+  justify-content: space-between;
+  
+  background:linear-gradient(120deg,rgb(197, 135, 135),rgb(177, 85, 85),rgb(209, 116, 116));
+}
+.logo{
+  width:30%;
+  padding: 10px;
+}
+.logo img{
+  width:30%;
+  padding: 10px;
+  cursor: pointer;
+ 
+}
+.search{
+  padding: 45px;
+}
+.search input{
+  width:260px;
+  height: 30px;
+  border:none;
+  outline: none;
+  font-size: 20px;
+  border-radius: 30px;
+}
+.mid{
+  width:100%;
+  height:5vh;
+  background:linear-gradient(120deg,rgb(197, 135, 135),rgb(177, 85, 85),rgb(209, 116, 116));
+  display: flex;
+  justify-content: center;
+}
+.mid ul{
+  list-style: none;
+  margin-top: 10px;
+  display:flex;
+  justify-content: center;
+}
+.mid li{
+  margin-left: 50px;
+  padding: 1px 10px;
+  height:2.75vh;
+  background:rgb(248, 76, 222);
+  cursor: pointer;
+  border-radius: 5px;
+  color:white;
+}
+.lower{
+  width:100%;
+  height:90vh;
+}
+.lower img{
+  position:relative;
+  width:100%;
+  height:100%;
+  opacity: 0.7;
+}
+.lower .porduct{
+  position:absolute;
+  margin-top:200px;
+  top:0;
+  width:100%;
+  height:auto;
+  background:transparent;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.p1{
+  margin-top: 30px;
+ 
+  width:25%;
+  color:white;
+  height:20vh;
+  display: flex;
+  flex-direction: row;
+  margin-right: 30px;
+  border-radius: 10px;
+  background:rgba(2, 0, 0, 0.5); 
+}
+.p1 .img{
+  width:40%;
+}
+.p1 .img img{
+  width:80%;
+  height:75%;
+  border-radius: 50%;
+  margin:10px;
+  opacity: 1;
+}
+.p1 .dis{
+  width:70%;
+  
+}
+.p1 .dis p{
+  margin-top: 15px;
+}
+.p1 .dis .pp1{
+  position: relative;
+  width:30%;
+  border-radius: 10px;
+  margin-top: 30px;
+  left:150px;
+  background:rgb(248, 27, 27);
+  color: white;
+  text-align: center;
+}
+}
+@media only screen and (min-width: 481px) and (max-width: 768px) {
+  .mainContainer{
+    width:100%;
+    height:auto;
+   
+  }
+   .maintopContainer{
+    width:100%;
+    display:flex;
+    justify-content: space-between;
+    background:linear-gradient(120deg,rgb(197, 135, 135),rgb(177, 85, 85),rgb(209, 116, 116));
+  }
+  .logo{
+    width:50%;
+    padding: 10px;
+  }
+  .logo img{
+    width:50%;
+  }
+  .search{
+    width:50%;
+    padding: 40px;
+  }
+  .search input{
+    width:160px;
+    height: 20px;
+    border:none;
+    outline: none;
+    font-size: 20px;
+    border-radius: 30px;
+  }
+
+.mid{
+  width:100%;
+  height:5vh;
+  background:linear-gradient(120deg,rgb(197, 135, 135),rgb(177, 85, 85),rgb(209, 116, 116));
+  display: flex;
+  justify-content: center;
+}
+.mid ul{
+  list-style: none;
+  margin-top: 10px;
+  display:flex;
+  justify-content: center;
+}
+.mid li{
+  margin-left: 30px;
+  padding: 1px 10px;
+  height:2.75vh;
+  background:rgb(248, 76, 222);
+  cursor: pointer;
+  border-radius: 5px;
+  color:white;
+}
+.lower{
+  width:100%;
+  height:100vh;
+}
+.lower img{
+  position:relative;
+  width:100%;
+  height:100%;
+  opacity: 0.7;
+}
+.lower .porduct{
+  position:absolute;
+  margin-top:200px;
+  top:0;
+  width:100%;
+  height:auto;
+  background:transparent;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.lower .porduct .p1{
+  position: relative;
+  width:80%;
+  height:20vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  border-radius: 20px;
+  color:white;
+  background:rgba(2, 0, 0, 0.7); 
+}.lower .porduct .p1 .img{
+  position: relative;
+  width:40%;
+  height:10vh;
+}
+.lower .porduct .p1 .img img{
+  position: relative;
+  width:60%;
+  height:15vh;
+  border-radius: 50%;
+  margin: 20px;
+  opacity: 1;
+}
+
+.lower .porduct .p1 .dis{
+  width:60%;
+  margin-right: 0;;
+}
+.p1 .dis p{
+  margin-top: 15px;
+  height: 10vh;
+  overflow: hidden;
+}
+.p1 .dis .pp1{
+  position: relative;
+  width:30%;
+padding: 1px;
+height:25px;
+  border-radius: 10px;
+  margin-top: 10px;
+  left:150px;
+  background:rgb(248, 27, 27);
+  color: white;
+  text-align: center;
+}
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+  .mainContainer{
+    width:100%;
+    height:auto;
+  
+  }
+   .maintopContainer{
+    width:100%;
+    display:flex;
+    justify-content: space-between;
+    
+    background:linear-gradient(120deg,rgb(197, 135, 135),rgb(177, 85, 85),rgb(209, 116, 116));
+  }
+  .logo{
+    width:30%;
+    padding: 10px;
+  }
+  .logo img{
+    width:30%;
+    padding: 10px;
+    cursor: pointer;
+   
+  }
+  .search{
+    padding: 45px;
+  }
+  .search input{
+    width:260px;
+    height: 30px;
+    border:none;
+    outline: none;
+    font-size: 20px;
+    border-radius: 30px;
+  }
+  .mid{
+    width:100%;
+    height:5vh;
+    background:linear-gradient(120deg,rgb(197, 135, 135),rgb(177, 85, 85),rgb(209, 116, 116));
+    display: flex;
+    justify-content: center;
+  }
+  .mid ul{
+    list-style: none;
+    margin-top: 10px;
+    display:flex;
+    justify-content: center;
+  }
+  .mid li{
+    margin-left: 50px;
+    padding: 1px 10px;
+    height:2.75vh;
+    background:rgb(248, 76, 222);
+    cursor: pointer;
+    border-radius: 5px;
+    color:white;
+  }
+  .lower{
+    width:100%;
+    height:90vh;
+  }
+  .lower img{
+    position:relative;
+    width:100%;
+    height:100%;
+    opacity: 0.7;
+  }
+  .lower .porduct{
+    position:absolute;
+    margin-top:200px;
+    top:0;
+    width:100%;
+    height:auto;
+    background:transparent;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  .p1{
+    margin-top: 30px;
+   
+    width:25%;
+    color:white;
+    height:20vh;
+    display: flex;
+    flex-direction: row;
+    margin-right: 30px;
+    border-radius: 10px;
+    background:rgba(2, 0, 0, 0.5); 
+  }
+  .p1 .img{
+    width:40%;
+  }
+  .p1 .img img{
+    width:80%;
+    height:75%;
+    border-radius: 50%;
+    margin:10px;
+    opacity: 1;
+  }
+  .p1 .dis{
+    width:70%;
+    
+  }
+  .p1 .dis p{
+    margin-top: 15px;
+  }
+  .p1 .dis .pp1{
+    position: relative;
+    width:30%;
+    border-radius: 10px;
+    margin-top: 30px;
+    left:150px;
+    background:rgb(248, 27, 27);
+    color: white;
+    text-align: center;
+  }
+}
