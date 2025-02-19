@@ -87,10 +87,10 @@
 .p1{
   position: relative;
   margin-top: 30px;
-  width:28%;
-  height:auto;
+  width:30%;
+  height:30vh;
   color:white;
-  height:20vh;
+
   display: flex;
   flex-direction: row;
   margin-right: 30px;
@@ -105,21 +105,28 @@
   height:75%;
   border-radius: 50%;
   margin:10px;
+  margin-top: 25px;
   opacity: 1;
 }
 .p1 .dis{
   width:70%;
+  margin-top: 20px;
   
 }
+.p1 .dis h3{
+  font-size: 30px;
+  margin-left: auto
+}
 .p1 .dis p{
-  margin-top: 15px;
+  margin-top: 20px;
+  font-size: 20px;
 }
 .p1 .dis .pp1{
-  position: relative;
+  position: absolute;
   width:30%;
   border-radius: 10px;
-  margin-top: 5px;
-  left:140px;
+  top:170px;
+  left:315px;
   background:rgb(248, 27, 27);
   color: white;
   text-align: center;
@@ -195,12 +202,10 @@
   margin-top:200px;
   top:0;
   width:100%;
-  height:120vh;
-
+  height:auto;
   background:transparent;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
 }
 .lower .porduct .p1{
@@ -209,14 +214,16 @@
   height:25vh;
   overflow: hidden;
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   margin-top: 20px;
   border-radius: 20px;
   color:white;
-  background:rgba(2, 0, 0, 0.7); 
+  background:rgba(2, 0, 0, 0.5); 
 }.lower .porduct .p1 .img{
   position: relative;
   width:40%;
+  margin-top: 20px;
   height:10vh;
 }
 .lower .porduct .p1 .img img{
@@ -230,21 +237,22 @@
 
 .lower .porduct .p1 .dis{
   width:60%;
+  margin-top: 12px;
   margin-right: 0;;
 }
 .p1 .dis p{
-  margin-top: 15px;
-  height: 10vh;
+  margin-top: 30px;
+  height: auto;
   overflow: hidden;
 }
 .p1 .dis .pp1{
-  position: relative;
+  position: absolute;
   width:30%;
-padding: 1px;
-height:25px;
+  padding: 1px;
+  height:25px;
   border-radius: 10px;
-  margin-top: 10px;
-  left:150px;
+  top:125px;
+  left:260px;
   background:rgb(248, 27, 27);
   color: white;
   text-align: center;
