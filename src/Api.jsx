@@ -5,16 +5,16 @@ import img4 from "./image/momo.jpg"
 import img5 from "./image/hotpot.jpg"
 const Data = [
     {
-        id:"",
-        category:"",
+        id:"1",
+        category:"Snack",
         name:"Ramen",
         desc:"In a medium pot, bring water to boil, cook ramen noodles according to package directions.",
         price:"20",
         image:img
     },
     {
-        id:"",
-        category:"",
+        id:"2",
+        category:"Lunch",
         name:"Non-Veg Thakali",
         desc:"Thalaki is a traditional Nepali hot beverage, a perfect blend of milk, spices, and butter. Rich, creamy ",
         price:"19",
@@ -22,8 +22,8 @@ const Data = [
     },
     
     {
-        id:"",
-        category:"",
+        id:"3",
+        category:"Dinner",
         name:"Non-Veg Biryani",
         desc:"Biryani is a fragrant, spice-infused rice dish with tender meat and rich flavors in every bite",
         price:"25",
@@ -32,16 +32,16 @@ const Data = [
     },
     
     {
-        id:"",
-        category:"",
+        id:"4",
+        category:"Snack",
         name:"MOMO",
         desc:"Momo, Nepal’s favorite dumpling, is a delicious blend of juicy fillings wrapped in soft dough",
         price:"15",
         image:img4
     },
     {
-        id:"",
-        category:"",
+        id:"5",
+        category:"Dinner",
         name:"Hot-Pot",
         desc:"Hotpot is a flavorful, communal dining experience where fresh ingredients ",
         price:"30",

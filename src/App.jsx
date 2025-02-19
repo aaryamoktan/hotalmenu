@@ -1,12 +1,17 @@
 import { useState } from 'react'
-
 import img from "./image/logo1.png"
 import img2 from "./image/main.jpg"
 import Data from './Api'
 import "./App.css"
 function App() {
-  const [cat,setCat] = useState();
- console.log(cat)
+  const [ff,setFF] = useState(Data);
+  const menuCAt = [...new Set(Data.map((val)=> val.category))] ;
+  const filterItems = (cat)=>
+  {
+  const newItems = Data.filter((newval)=>newval.category===cat)
+  setFF(newItems)
+  }
+console.log(ff)
   return (
     <>
       <div className='mainContainer'>
@@ -20,33 +25,25 @@ function App() {
         </div>
         <div className='mid'>
           <ul>
+            {menuCAt.map(val=>(
+              <li onClick={(e)=>
+              {
+              
+                filterItems(val)
+              }
+              } >{val}</li>
+            ))}
             <li onClick={()=>
               {
-                setCat("all")
+                setFF(Data)
               }
             }>All</li>
-            <li onClick={()=>
-              {
-                setCat("breakfast")
-              }
-            }>Breakfast</li>
-            <li onClick={()=>
-              {
-                setCat("lunch")
-              }
-            }>Lunch</li>
-            <li onClick={()=>
-              {
-                setCat("dinner")
-               
-              }
-            }>Dinner</li>
           </ul>
         </div>
         <div className='lower'>
         <img src={img2}/>
         <div className='porduct'>
-         {Data.map((ele)=>
+         {ff&&ff.map((ele)=>
         {
           const {name,image,price,desc } = ele
           return(
@@ -63,16 +60,11 @@ function App() {
           </div>
             </>
           )
-        })}
-         
-          
+        })}  
         </div>
         </div>
       </div>
-
-
     </>
   )
 }
-
-export default App
+export default App;
